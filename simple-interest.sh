@@ -4,7 +4,7 @@
 # Do not use this in production. Sample purpose only.
 # Author: Upkar Lidder (IBM)
 # Additional Authors: 
-#sree-r-one
+# Sreeraj Edakulathil Chellappan
 # Input:
 # p, principal amount
 # t, time period in years
