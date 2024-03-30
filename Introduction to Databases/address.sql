@@ -11,3 +11,18 @@ CREATE TABLE invoice(
     product_quantity INT, 
     total_price DECIMAL
 );
+
+CREATE TABLE student(
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(30) NOT NULL, 
+    email VARCHAR(100) NOT NULL 
+);
+
+ALTER TABLE student ADD(
+    age INT, 
+    country VARCHAR(50),
+    nationality VARCHAR(255)
+)
+
+ALTER TABLE student MODIFY country VARCHAR(100);
+ALTER TABLE student DROP COLUMN nationality;
