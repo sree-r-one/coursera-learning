@@ -26,3 +26,15 @@ ALTER TABLE student ADD(
 
 ALTER TABLE student MODIFY country VARCHAR(100);
 ALTER TABLE student DROP COLUMN nationality;
+
+CREATE TABLE customers(
+    customer_id INT, 
+    customer_name VARCHAR(50),
+    customer_address VARCHAR(255)
+);
+
+INSERT INTO customers VALUES(
+    1, 
+    "Jack",
+    "115 Old Street, Belfast"
+);
