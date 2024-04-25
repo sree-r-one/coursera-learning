@@ -19,3 +19,12 @@ INSERT INTO `customers` (`customer_ID`, `customer_Name`, `customer_Address`) VAL
 
 ALTER DATABASE customers RENAME TO bookshop;
 RENAME DATABASE customers TO bookshop;
+
+
+
+
+
+
+
+SELECT total + 0.25 FROM invoices; 
+SELECT total - 0.25 FROM invoices; 
