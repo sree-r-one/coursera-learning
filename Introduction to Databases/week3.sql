@@ -68,3 +68,34 @@ CREATE TABLE cart_order(
     FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
     FOREIGN KEY (product_id) REFERENCES product(product_id)
 );
+
+CREATE DATABASE automobile;
+
+CREATE TABLE vehicle(
+    vehicle_id VARCHAR(10),
+    owner_id VARCHAR(10),
+    plate_numer VARCHAR(10),
+    phone_number INT
+); 
+
+CREATE TABLE owner(
+    owner_id VARCHAR(10),
+    owner_name VARCHAR(50),
+    owner_address VARCHAR(255),
+    PRIMARY KEY (owner_id)
+);
+
+ALTER TABLE vehicle ADD FOREIGN key(owner_id) REFERENCES owner(owner_id);
+
+INSERT INTO 
+Ow01  
+Amjad Omer
+110, Elephant Way
+
+Ow02  
+Hans Henderson
+120, Dragon Way
+
+Ow03
+Paulo Galdames
+130, Giraffe Avenue
